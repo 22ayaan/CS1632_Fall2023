@@ -127,6 +127,7 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 * November 29 (Wednesday) 3:00 PM - 4:15 PM: CGI Lecture on Web Testing using Healenium and JMeter
   * Speaker: Lakshmi Narasimhan Yeri Ranganathan, Director - Consulting Services, [LinkedIn](https://www.linkedin.com/in/lakshmi-narasimhan-yeri-ranganathan-4b7b874b/)
   * Speaker: Sharath Chandran, Director, Consulting Expert, [LinkedIn](https://www.linkedin.com/in/sharath-chandran-6a9b7110/)
+  * Speaker: Satish Dupati, Senior Consultant, [LinkedIn](https://www.linkedin.com/in/satishdupati/)
   * 305 IS Building
 
 ## WEEK 15 (Week of 4 DEC)
