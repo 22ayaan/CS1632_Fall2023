@@ -3,7 +3,7 @@ package edu.pitt.cs;
 import java.util.Random;
 
 /**
- * Code by @author Wonsun Ahn. Copyright Fall 2022.
+ * Code by @author Wonsun Ahn.  Copyright Fall 2022.
  * 
  * <p>
  * Bean: If created in skill mode, each bean is assigned a skill level from 0-9
@@ -40,11 +40,6 @@ public class BeanImpl implements Bean {
 	// TODO: Add more member variables as needed
 	private int xpos;
 	private int ypos;
-	private double skillAverage;
-	private double skillStdDev;
-	private int skillLevel;
-	private boolean isLuck;
-	private Random rand;
 
 	/**
 	 * Constructor - creates a bean in either luck mode or skill mode.
@@ -54,24 +49,7 @@ public class BeanImpl implements Bean {
 	 * @param rand      the random number generator
 	 */
 	BeanImpl(int slotCount, boolean isLuck, Random rand) {
-		xpos = 0;
-		ypos = 0;
-		skillAverage = (slotCount - 1) * 0.5;
-		skillStdDev = (double) (Math.sqrt(slotCount * 0.5 * (1 - 0.5)));
-		skillLevel = (int) (Math.round(rand.nextGaussian() * skillStdDev + skillAverage));
-		skillLevel = skillLevel > (slotCount - 1) ? (slotCount - 1) : skillLevel;
-		skillLevel = skillLevel < 0 ? 0 : skillLevel;
-		/*
-		 * * <pre>
-		 * SKILL_AVERAGE = (double) (SLOT_COUNT-1) * 0.5
-		 * SKILL_STDEV = (double) Math.sqrt(SLOT_COUNT * 0.5 * (1 - 0.5))
-		 * SKILL_LEVEL = (int) Math.round(rand.nextGaussian() * SKILL_STDEV +
-		 * SKILL_AVERAGE)
-		 * SKILL_LEVEL = SKILL_LEVEL > (SLOT_COUNT - 1) ? (SLOT_COUNT - 1) :
-		 * SKILL_LEVEL;
-		 * SKILL_LEVEL = SKILL_LEVEL < 0 ? 0 : SKILL_LEVEL;
-		 * </pre>
-		 */
+		// TODO: Implement
 	}
 
 	/**
@@ -81,7 +59,8 @@ public class BeanImpl implements Bean {
 	 * @return the current X-coordinate of the bean
 	 */
 	public int getXPos() {
-		return xpos;
+		// TODO: Implement
+		return 0;
 	}
 
 	/**
@@ -91,7 +70,8 @@ public class BeanImpl implements Bean {
 	 * @return the current Y-coordinate of the bean
 	 */
 	public int getYPos() {
-		return ypos;
+		// TODO: Implement
+		return 0;
 	}
 
 	/**
@@ -99,8 +79,7 @@ public class BeanImpl implements Bean {
 	 * to 0.
 	 */
 	public void reset() {
-		xpos = 0;
-		ypos = 0;
+		// TODO: Implement
 	}
 
 	/**
@@ -114,14 +93,6 @@ public class BeanImpl implements Bean {
 	 * deterministically according to the algorithm on the class description.
 	 */
 	public void advanceStep() {
-		if (this.isLuck == true) {
-			if (rand.nextInt(2) == 1) {
-				this.xpos++;
-			}
-		} else if (this.skillLevel > 0) {
-			this.xpos++;
-			skillLevel--;
-		}
-		this.ypos++;
+		// TODO: Implement
 	}
 }
