@@ -522,7 +522,7 @@ while (true) {
 
 Why did I have to do this?  That is because JPF is not designed to take user
 input.  If it were to take user input, then the test coverage of JPF will be
-beholden to what input the user chooses.  The gaol of JPF (and any other
+beholden to what input the user chooses.  The goal of JPF (and any other
 model checker) is to verify the program **regardless of user input**.
 
 JPF provides a set of APIs under the Verify class (gov.nasa.jpf.vm.Verify)
