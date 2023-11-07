@@ -696,7 +696,7 @@ thing that constantly changes every round is the round number --- and that is
 the culprit leading to the state explosion.  The round number is not something
 we are interested in verifying right now.  So, let's filter that state out!
 
-Import the appropriate JPF library at the top of DrunkCarnivalShooter.java again:
+Import the appropriate JPF library at the top of DrunkCarnivalShooterImpl.java again:
 
 ```
 import gov.nasa.jpf.annotation.FilterField;
